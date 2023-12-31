@@ -1,6 +1,5 @@
 import animals.Animal;
-import animals.birds.Duck;
-import animals.birds.Flying;
+import animals.birds.IFlying;
 import data.AnimalData;
 import data.CommandsData;
 import factory.AnimalFactory;
@@ -86,8 +85,8 @@ public class Main {
                     animalsList.add(animal);
 
                     animal.say();
-                    if(animal instanceof Flying) {
-                        ((Flying) animal).fly();
+                    if(animal instanceof IFlying) {
+                        ((IFlying) animal).fly();
                     }
                     break;
 

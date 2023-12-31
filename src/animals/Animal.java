@@ -81,9 +81,6 @@ public abstract class Animal {
          if(ostatok == 1) {
              return "год";
          }
-         if(ostatok >=2 || ostatok <= 4) {
-             return "года";
-         }
-         return null;
+        return "года";
     }
 }
